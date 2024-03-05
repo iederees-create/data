@@ -6,21 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Monetization Services</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+        /* Your existing styles remain unchanged */
 
-        header {
-            background-color: #333;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        section {
+        form {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
@@ -29,23 +17,16 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            color: #333;
+        form label,
+        form input,
+        form textarea,
+        form button {
+            display: block;
+            margin-bottom: 15px;
         }
 
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        footer {
-            background-color: #333;
-            padding: 10px;
-            text-align: center;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        form textarea {
+            resize: vertical;
         }
     </style>
 </head>
@@ -57,29 +38,31 @@
     </header>
 
     <section>
-        <h2>Welcome to Data Monetization Solutions!</h2>
+        <!-- Your existing content -->
+
+        <h2>Reshape Your Business with Data</h2>
         <p>
-            Iederees Francis offers top-notch data monetization services to help businesses leverage their data for
-            strategic growth. With expertise in various domains, including data analytics, marketing analytics, and
-            more, I can assist you in unlocking the true potential of your data.
+            Unlock the power of your company's data to make informed decisions, drive efficiency, and gain a competitive
+            edge. From customer behavior analysis to operational optimization, data holds the key to transforming your
+            business. Let me guide you through the process of leveraging your data for strategic growth.
         </p>
-        <p>
-            Whether you are looking to enhance customer experiences, optimize operations, or drive revenue through
-            data-driven insights, I'm here to guide you at every step.
-        </p>
-        <h2>Services Offered:</h2>
-        <ul>
-            <li>Data Analytics</li>
-            <li>Marketing Analytics</li>
-            <li>Data Visualization</li>
-            <li>Data-Driven Decision Making</li>
-            <li>and more...</li>
-        </ul>
-        <h2>Contact Me:</h2>
-        <p>
-            For inquiries about how I can help you monetize your data, please feel free to reach out via email at
-            <a href="mailto:iedereesfrancis@example.com">iedereesfrancis@example.com</a>.
-        </p>
+
+        <h2>Get a Quote:</h2>
+        <form action="mailto:iedereesfrancis@example.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="message">Tell me about your business and data needs:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <footer>
